@@ -79,7 +79,7 @@ button:hover {
     animation: buttonAnimation 0.5s ease;
 }
 
-الطالب */ .grades {
+.grades {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
