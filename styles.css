@@ -1,0 +1,135 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 50px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #2980b9;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated {
+    animation: buttonAnimation 0.5s ease;
+}
+
+الطالب */ .grades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.grades p {
+    background-color: #ecf0f1;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 0;
+    flex: 1 1 calc(50% - 30px);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.grades p:hover {
+    background-color: #d5dbdb;
+}
+
+.grades p.low-grade {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 18px;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+
+#studentName,
+#studentSID,
+#studentRank,
+#studentAvg {
+    font-weight: bold;
+    color: #2c3e50;
+}
