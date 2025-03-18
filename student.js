@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const studentId = urlParams.get('id');
 
-// تحميل البيانات من ملف JSON الموجود في مجلد data
+
 fetch('students.json')
     .then(response => response.json())
     .then(students => {
@@ -19,7 +19,8 @@ fetch('students.json')
                 { id: 'p', value: student.P, name: 'الاحتمالات' },
                 { id: 'lp', value: student.LP, name: 'البرمجة الرياضية' },
                 { id: 'l3', value: student.L3, name: 'لغة أجنبية 3' },
-                { id: 'c3', value: student.C3, name: 'تحليل 3' }
+                { id: 'c3', value: student.C3, name: 'تحليل 3' },
+                { id: 'el', value: student.EL, name: 'الكترونيات' }
             ];
 
             grades.forEach(grade => {
@@ -30,7 +31,6 @@ fetch('students.json')
                 }
             });
         } else {
-            // إخفاء جميع العناصر وإظهار رسالة فقط
             document.querySelector('.container').innerHTML = `
                 <h1>معلومات الطالب</h1>
                 <p style="color: #e74c3c; font-weight: bold;">الطالب غير موجود</p>
